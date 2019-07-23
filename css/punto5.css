@@ -1,0 +1,21 @@
+.display-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* External Controls */
+.character, .controls {
+    display: flex;
+    justify-content: center;
+}
+
+.character > div {
+    border: 1px solid gray;
+    border-radius: .5rem;
+    height: 20px;
+    margin: .3rem; 
+    padding: 1rem;
+    width: 18px;
+}

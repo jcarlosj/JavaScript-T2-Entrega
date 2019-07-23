@@ -1,0 +1,187 @@
+.display-result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: .5rem;
+    position: relative;
+}
+
+.box div.item:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.box div.item:nth-child( 2 ) {
+    text-align: center;
+}
+.box div.item:last-child {
+    text-align: right;
+}
+
+/* Shapes */
+.square {
+    width: 120px; 
+    height: 120px; 
+    background: yellowgreen; 
+}
+.square > div {
+    color: gray;
+}
+.square div.item:first-child {
+    margin-top: 1rem;
+}
+.square div.item:last-child {
+    padding-right: 1rem;
+}
+
+.circle { 
+    width: 120px;
+    height: 120px;
+    background: blue; 
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+}
+.circle > div {
+    color: white;
+}
+.circle div.item:first-child {
+    margin-top: 1rem;
+}
+.circle div.item:last-child {
+    padding-right: 1rem;
+}
+
+.eq-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 124px solid orange;
+    /* 104 = 120 * 0.866 */
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+}
+.eq-triangle > div {
+    color: green;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.eq-triangle div.item:first-child {
+    top: 3.5rem;
+}
+.eq-triangle div.item:nth-child( 2 ) {
+    top: 5rem;
+}
+.eq-triangle div.item:last-child {
+    top: 6.5rem;
+}
+
+.egg {
+    display: block;
+    width: 126px; 
+    /* width has to be 70% of height */
+    /* could use width:70%; in a square container */
+    height: 180px;
+    background-color: green;
+ 
+    /* beware that Safari needs actual
+        px for border radius (bug) */
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    /* fails in Safari, but overwrites in Chrome */
+    border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+}
+.egg > div {
+    color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.egg div.item:first-child {
+    top: 3.5rem;
+}
+.egg div.item:nth-child( 2 ) {
+    top: 6rem;
+}
+.egg div.item:last-child {
+    top: 7.5rem;
+}
+
+.parallelogram {
+    width: 140px; 
+    height: 100px;
+    background: rgb(119, 119, 196);
+    /* Skew */
+    -webkit-transform: skew(20deg); 
+    -moz-transform: skew(20deg); 
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+.parallelogram > div {
+    color: rgb(192, 197, 181);
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.parallelogram div.item:first-child {
+    top: 1.5rem;
+}
+.parallelogram div.item:nth-child( 2 ) {
+    top: 3.5rem;
+}
+.parallelogram div.item:last-child {
+    top: 5rem;
+}
+
+.octagon {
+   width: 140px;        /* 100px */ 
+   height: 140px;       /* 100px */
+   background: peru;
+   position: relative;
+}
+.octagon:before {
+   height: 0;
+   width: 15px;
+   content:"";
+   position: absolute; 
+   border-bottom: 67px solid peru;
+   border-left: 63px solid white; 
+   border-right: 63px solid white; 
+}
+.octagon:after {
+   height: 0;
+   width: 15px;
+   content:"";
+   position: absolute; 
+   border-top: 67px solid peru; 
+   border-left: 63px solid white;  
+   border-right: 63px solid white; 
+   margin: 0 0 0 0;
+}
+.octagon > div {
+    color: black;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.octagon div.item:first-child {
+    position: relative; 
+    top: 2.5rem;
+    z-index: 10;
+}
+.octagon div.item:nth-child( 2 ) {
+    position: relative; 
+    top: 2rem;
+    z-index: 10;
+}
+.octagon div.item:last-child {
+    position: relative; 
+    text-align: center;
+    top: 2.5rem;
+    z-index: 10;
+}

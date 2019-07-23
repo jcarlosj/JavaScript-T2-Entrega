@@ -1,0 +1,11 @@
+.display-result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: .2rem;
+    padding: 2rem;
+}

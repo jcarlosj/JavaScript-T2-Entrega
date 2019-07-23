@@ -1,0 +1,26 @@
+/** Image */
+.image {
+    background-position: center;
+    border: 1px dotted blue;
+    height: 768px;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    width: 1200px;
+}
+
+.display-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+#data-video {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+/* External Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+}

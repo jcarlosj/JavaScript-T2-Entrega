@@ -1,0 +1,20 @@
+.display-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* External Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.controls > div {
+    border-radius: 8px;
+    height: 30px;
+    margin: .3rem; 
+    padding: 1rem;
+    width: 30px;
+}

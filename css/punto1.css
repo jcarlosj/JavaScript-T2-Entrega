@@ -1,0 +1,17 @@
+/* Video */
+.display-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+#data-video {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+/* External Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+}
